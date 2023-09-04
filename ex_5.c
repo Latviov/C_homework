@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 
-int number, cheat;
+int cheat;
 
 int read_range(int num1, int num2) {
-
+    int number;
     printf("Lets play\nRoll a 6 sided dice and enter the result\n");
     if (scanf("%d", &number) != 1)  {
         printf("Invalid input!\nPlease enter a number!\n");
@@ -26,7 +26,7 @@ int main() {
             printf("I got 6, its a tie!\n");
         } else {
             cheat = result + 1;
-            printf("I got %d, I win!\n", &cheat);
+            printf("I got %d, I win!\n", cheat);
         }
     }
     return 0;
